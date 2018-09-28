@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'game_of_life'
+
+
+
+puts "Enter size of grid HeightXWidth: "
+grid_size = gets.chomp
+puts "How many generations?"
+generations = gets.chomp
+
+
+grid = Grid.new(grid_size.to_i, grid_size.to_i, generations.to_i)
+grid.start
